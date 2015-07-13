@@ -5,7 +5,7 @@ var handleTheClick = function(event){
   
   var req = new XMLHttpRequest();
 
-  req.open("get", "/hey_there");
+  req.open("get", "/meow_meow");
 
   req.addEventListener("load", function(){    
     thisLink.innerText = this.response;
