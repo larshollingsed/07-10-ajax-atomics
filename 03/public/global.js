@@ -7,7 +7,7 @@ var req = new XMLHttpRequest();
 var myLink = document.getElementById("clicker");
 
 var handleTheClick = function(event){
-  req.open("get", "/path1");
+  req.open("get", this.href);
 
   req.addEventListener("load", function(){
     alert(this.response);
