@@ -7,10 +7,11 @@ var req = new XMLHttpRequest();
 var myLink = document.getElementById("clicker");
 
 var handleTheClick = function(event){
+  var thisLink = this;
   req.open("get", this.href);
 
   req.addEventListener("load", function(){
-    alert(this.response);
+    thisLink.innerHTML = this.response;
   });
 
   req.send();
